@@ -39,24 +39,35 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
 dependencies {
 
+    //Compile time dependencies
+    kapt(Libraries.lifecycleCompiler)
+    kapt(Libraries.hiltCompiler)
+
     // Application dependencies
+    implementation(Libraries.kotlinStdLib)
+    implementation(Libraries.kotlinCoroutines)
+    implementation(Libraries.kotlinCoroutinesAndroid)
     implementation(Libraries.ktxCore)
     implementation(Libraries.appCompat)
     implementation(Libraries.material)
     implementation(Libraries.constraintLayout)
     implementation(Libraries.liveData)
+    implementation(Libraries.lifecycleExtensions)
     implementation(Libraries.viewModel)
     implementation(Libraries.hilt)
-    kapt(Libraries.hiltCompiler)
     implementation(Libraries.navigationFragment)
     implementation(Libraries.navigationUi)
     implementation(Libraries.navigationFeatures)
     implementation(Libraries.navigationCompose)
+    implementation(Libraries.rxAndroid)
+    implementation(Libraries.rxKotlin)
+    implementation(Libraries.timber)
 
     // Unit/Android tests dependencies
     testImplementation(TestLibraries.junit4)

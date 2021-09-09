@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_cast">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.regoworld.regotv.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_cast"
+        android:name="com.regoworld.regotv.ui.cast.CastListFragment"
+        android:label="@string/title_cast"
+        tools:layout="@layout/fragment_castlist" />
 
     <fragment
         android:id="@+id/navigation_dashboard"

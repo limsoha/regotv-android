@@ -45,6 +45,11 @@ object ScriptPlugins {
     const val compilation = "scripts.compilation"
 }
 
+object MavenUrls {
+    const val kakaoenterprise = "https://icl.jfrog.io/artifactory/kakaoenterprise"
+    const val jitpack = "https://jitpack.io"
+}
+
 object Libraries {
     private object Versions {
         const val hilt = BuildPlugins.Versions.hilt
@@ -62,6 +67,10 @@ object Libraries {
         const val retrofit = "2.9.0"
         const val okHttpLoggingInterceptor = "4.9.0"
         const val navigationCompose = "2.4.0-alpha08"
+        const val kakaoIConnectLive = "2.9.9"
+        const val rxAndroid = "3.0.0"
+        const val rxKotlin = "3.0.1"
+        const val timber = "5.0.1"
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.standardLibrary}"
@@ -93,6 +102,10 @@ object Libraries {
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val navigationFeatures = "androidx.navigation:navigation-dynamic-features-fragment:${Versions.navigation}"
     const val navigationCompose = "androidx.navigation:navigation-compose:${Versions.navigationCompose}"
+    const val kakaoIConnectLive = "com.kakaoenterprise:kakao-i-connect-live:${Versions.kakaoIConnectLive}"
+    const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.rxAndroid}"
+    const val rxKotlin = "io.reactivex.rxjava3:rxkotlin:${Versions.rxKotlin}"
+    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 }
 
 object TestLibraries {
