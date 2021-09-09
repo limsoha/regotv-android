@@ -3,6 +3,7 @@ plugins {
     id(BuildPlugins.androidApplication)
     id(BuildPlugins.kotlinAndroid)
     id(BuildPlugins.kotlinKapt)
+    id(BuildPlugins.androidHilt)
     id(BuildPlugins.navigationSafeargs)
 }
 
@@ -50,6 +51,8 @@ dependencies {
     implementation(Libraries.constraintLayout)
     implementation(Libraries.liveData)
     implementation(Libraries.viewModel)
+    implementation(Libraries.hilt)
+    kapt(Libraries.hiltCompiler)
     implementation(Libraries.navigationFragment)
     implementation(Libraries.navigationUi)
     implementation(Libraries.navigationFeatures)

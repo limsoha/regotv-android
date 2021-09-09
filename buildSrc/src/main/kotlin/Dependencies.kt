@@ -1,5 +1,5 @@
 object Kotlin {
-    const val standardLibrary = "1.4.10"
+    const val standardLibrary = "1.5.30"
     const val coroutines = "1.3.9"
 }
 
@@ -18,21 +18,23 @@ object AndroidClient {
 
 object BuildPlugins {
     object Versions {
-        const val buildToolsVersion = "4.2.0"
+        const val buildToolsVersion = "7.0.2"
+        const val googleService = "4.3.4"
         const val gradleVersion = "6.8"
-        const val hilt = "2.35.1"
+        const val hilt = "2.38.1"
         const val navigation = "2.3.5"
     }
 
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
+    const val googleService = "com.google.gms:google-services:${Versions.googleService}"
     const val kotlinGradlePlugin =
         "org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.standardLibrary}"
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
+    const val navigationGradlePlugin = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
     const val androidApplication = "com.android.application"
     const val kotlinAndroid = "kotlin-android"
     const val kotlinKapt = "kotlin-kapt"
     const val androidHilt = "dagger.hilt.android.plugin"
-    const val kotlinAndroidExtensions = "kotlin-android-extensions"
     const val navigationSafeargs = "androidx.navigation.safeargs.kotlin"
 }
 
