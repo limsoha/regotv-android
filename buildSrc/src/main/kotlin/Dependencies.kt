@@ -32,6 +32,7 @@ object BuildPlugins {
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
     const val navigationGradlePlugin = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
     const val androidApplication = "com.android.application"
+    const val androidLibrary = "com.android.library"
     const val kotlinAndroid = "kotlin-android"
     const val kotlinKapt = "kotlin-kapt"
     const val androidHilt = "dagger.hilt.android.plugin"

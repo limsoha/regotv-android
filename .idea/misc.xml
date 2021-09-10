@@ -8,6 +8,8 @@
         <entry key="app/src/main/res/layout/fragment_casts.xml" value="0.14270833333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/row_cast.xml" value="0.21" />
+        <entry key="presentation/src/main/res/layout/fragment_cast.xml" value="0.1" />
+        <entry key="presentation/src/main/res/layout/fragment_casts.xml" value="0.1" />
       </map>
     </option>
   </component>

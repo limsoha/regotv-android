@@ -9,3 +9,6 @@ rootDir
     .forEach {
         include(":${it.name}")
     }
+include(":data")
+include(":presentation")
+include(":domain")
