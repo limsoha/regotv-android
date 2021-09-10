@@ -1,5 +1,5 @@
-/*
- * Copyright (C) 2019 The Android Open Source Project
+/**
+ * Copyright (C) 2020 Fernando Cejas Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.regoworld.regotv.extensions
-
+package com.regoworld.regotv.core.exception
 
 /**
- * Extension functions for Fragment.
+ * Base Class for handling errors/failures/exceptions.
+ * Every feature specific failure should extend [FeatureFailure] class.
  */
+sealed class Failure {
+    object NetworkConnection : Failure()
+    object ServerError : Failure()
 
-import androidx.fragment.app.Fragment
-import com.regoworld.regotv.ViewModelFactory
-
-fun Fragment.getViewModelFactory(): ViewModelFactory {
-    return ViewModelFactory()
+    /** * Extend this class for feature specific failures.*/
+    abstract class FeatureFailure : Failure()
 }

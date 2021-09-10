@@ -1,4 +1,4 @@
-package com.regoworld.regotv.ui.dashboard
+package com.regoworld.regotv.view.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

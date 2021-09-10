@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_cast">
+    app:startDestination="@+id/navigation_casts">
+
+    <fragment
+        android:id="@+id/navigation_casts"
+        android:name="com.regoworld.regotv.view.cast.CastsFragment"
+        android:label="@string/title_casts"
+        tools:layout="@layout/fragment_casts" />
 
     <fragment
         android:id="@+id/navigation_cast"
-        android:name="com.regoworld.regotv.ui.cast.CastListFragment"
+        android:name="com.regoworld.regotv.view.cast.CastFragment"
         android:label="@string/title_cast"
-        tools:layout="@layout/fragment_castlist" />
+        tools:layout="@layout/fragment_cast" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.regoworld.regotv.ui.dashboard.DashboardFragment"
+        android:name="com.regoworld.regotv.view.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.regoworld.regotv.ui.notifications.NotificationsFragment"
+        android:name="com.regoworld.regotv.view.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

@@ -1,10 +1,11 @@
-package com.regoworld.regotv.core
+package com.regoworld.regotv.base
 
 import android.content.DialogInterface
 import androidx.annotation.StringRes
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.regoworld.regotv.core.Event
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 
 open class BaseViewModel : ViewModel() {

@@ -36,6 +36,7 @@ object BuildPlugins {
     const val kotlinKapt = "kotlin-kapt"
     const val androidHilt = "dagger.hilt.android.plugin"
     const val navigationSafeargs = "androidx.navigation.safeargs.kotlin"
+    const val kotlinAndroidExtensions = "kotlin-android-extensions"
 }
 
 object ScriptPlugins {
@@ -71,6 +72,7 @@ object Libraries {
         const val rxAndroid = "3.0.0"
         const val rxKotlin = "3.0.1"
         const val timber = "5.0.1"
+        const val hiltNavigationFragment = "1.0.0"
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.standardLibrary}"
@@ -106,6 +108,7 @@ object Libraries {
     const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.rxAndroid}"
     const val rxKotlin = "io.reactivex.rxjava3:rxkotlin:${Versions.rxKotlin}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+    const val hiltNavigationFragment = "androidx.hilt:hilt-navigation-fragment:${Versions.hiltNavigationFragment}"
 }
 
 object TestLibraries {

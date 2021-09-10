@@ -5,6 +5,7 @@ plugins {
     id(BuildPlugins.kotlinKapt)
     id(BuildPlugins.androidHilt)
     id(BuildPlugins.navigationSafeargs)
+    id(BuildPlugins.kotlinAndroidExtensions)
 }
 
 android {
@@ -65,9 +66,11 @@ dependencies {
     implementation(Libraries.navigationUi)
     implementation(Libraries.navigationFeatures)
     implementation(Libraries.navigationCompose)
+    implementation(Libraries.kakaoIConnectLive)
     implementation(Libraries.rxAndroid)
     implementation(Libraries.rxKotlin)
     implementation(Libraries.timber)
+    implementation(Libraries.hiltNavigationFragment)
 
     // Unit/Android tests dependencies
     testImplementation(TestLibraries.junit4)

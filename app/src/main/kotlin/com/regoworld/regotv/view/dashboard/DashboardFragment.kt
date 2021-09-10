@@ -1,4 +1,4 @@
-package com.regoworld.regotv.ui.dashboard
+package com.regoworld.regotv.view.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.regoworld.regotv.R
 import com.regoworld.regotv.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {

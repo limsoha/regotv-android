@@ -15,3 +15,13 @@ buildscript {
         // in the individual module build.gradle.kts files
     }
 }
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven(url = MavenUrls.kakaoenterprise)
+        maven(url = MavenUrls.jitpack)
+    }
+}

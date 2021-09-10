@@ -1,4 +1,4 @@
-package com.regoworld.regotv.ui.notifications
+package com.regoworld.regotv.view.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater

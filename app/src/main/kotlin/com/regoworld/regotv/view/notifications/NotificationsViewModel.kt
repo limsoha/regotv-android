@@ -1,4 +1,4 @@
-package com.regoworld.regotv.ui.notifications
+package com.regoworld.regotv.view.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
