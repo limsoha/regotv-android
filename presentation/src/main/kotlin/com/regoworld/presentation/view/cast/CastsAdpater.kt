@@ -3,6 +3,7 @@ package com.regoworld.presentation.view.cast
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.regoworld.domain.model.cast.CastView
 import com.regoworld.presentation.R
 import com.regoworld.presentation.core.extensions.inflate
 import kotlinx.android.synthetic.main.row_cast.view.*
