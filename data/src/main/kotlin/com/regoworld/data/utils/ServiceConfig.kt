@@ -1,4 +1,4 @@
-package com.regoworld.data
+package com.regoworld.data.utils
 
 object ServiceConfig {
     const val remoteServerKey = "50fe243e-fbb8-4389-9e16-94a5df3a42c5"

@@ -1,7 +1,7 @@
 package com.regoworld.data.module
 
 import android.content.Context
-import com.regoworld.data.ServiceConfig
+import com.regoworld.data.utils.ServiceConfig
 import com.remotemonster.sdk.RemonCast
 import dagger.Module
 import dagger.Provides

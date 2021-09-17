@@ -23,6 +23,7 @@ object BuildPlugins {
         const val gradleVersion = "6.8"
         const val hilt = "2.38.1"
         const val navigation = "2.3.5"
+        const val room = "2.3.0"
     }
 
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
@@ -74,6 +75,10 @@ object Libraries {
         const val rxKotlin = "3.0.1"
         const val timber = "5.0.1"
         const val hiltNavigationFragment = "1.0.0"
+        const val room = BuildPlugins.Versions.room
+        const val roomPaging = "2.4.0-alpha04"
+        const val moshi = "1.12.0"
+        const val startup = "1.1.0"
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.standardLibrary}"
@@ -110,6 +115,13 @@ object Libraries {
     const val rxKotlin = "io.reactivex.rxjava3:rxkotlin:${Versions.rxKotlin}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val hiltNavigationFragment = "androidx.hilt:hilt-navigation-fragment:${Versions.hiltNavigationFragment}"
+    const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
+    const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+    const val roomRxjava3 = "androidx.room:room-rxjava3:${Versions.room}"
+    const val roomPaging = "androidx.room:room-paging:${Versions.roomPaging}"
+    const val moshi = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
+    const val moshiKotlinCodegen = "com.squareup.moshi:moshi-kotlin-codegen:${Versions.moshi}"
+    const val startup = "androidx.startup:startup-runtime:${Versions.startup}"
 }
 
 object TestLibraries {
@@ -125,6 +137,7 @@ object TestLibraries {
         const val testRules = "1.1.0"
         const val hiltTesting = BuildPlugins.Versions.hilt
         const val navigationTesting = BuildPlugins.Versions.navigation
+        const val roomTesting = BuildPlugins.Versions.room
     }
 
     const val junit4 = "junit:junit:${Versions.junit4}"
@@ -140,6 +153,7 @@ object TestLibraries {
     const val hiltTesting = "com.google.dagger:hilt-android-testing:${Versions.hiltTesting}"
     const val navigationTesting =
         "androidx.navigation:navigation-testing:${Versions.navigationTesting}"
+    const val roomTesting = "androidx.room:room-testing:${Versions.roomTesting}"
 }
 
 object DevLibraries {

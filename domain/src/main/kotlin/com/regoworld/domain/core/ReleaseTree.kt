@@ -1,4 +1,4 @@
-package com.regoworld.presentation.core
+package com.regoworld.domain.core
 
 import android.util.Log
 import timber.log.Timber

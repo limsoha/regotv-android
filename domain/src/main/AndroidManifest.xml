@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.regoworld.domain"></manifest>
+<manifest package="com.regoworld.domain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <provider
+            android:authorities="com.regoworld.regotv.androidx-startup"
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            tools:node="merge">
+
+            <meta-data
+                android:name="com.regoworld.domain.initializer.TimberInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

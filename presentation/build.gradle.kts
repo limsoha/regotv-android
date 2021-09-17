@@ -42,6 +42,8 @@ dependencies {
     //Compile time dependencies
     kapt(Libraries.lifecycleCompiler)
     kapt(Libraries.hiltCompiler)
+    kapt(Libraries.moshiKotlinCodegen)
+    kapt(Libraries.roomCompiler)
 
     // Application dependencies
     implementation(Libraries.appCompat)
@@ -61,6 +63,9 @@ dependencies {
     implementation(Libraries.navigationFeatures)
     implementation(Libraries.navigationCompose)
     implementation(Libraries.kakaoIConnectLive)
+    implementation(Libraries.moshi)
+    implementation(Libraries.roomRxjava3)
+    implementation(Libraries.roomRuntime)
 
     // Unit/Android tests dependencies
     testImplementation(TestLibraries.junit4)

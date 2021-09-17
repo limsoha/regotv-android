@@ -37,16 +37,23 @@ dependencies {
 
     //Compile time dependencies
     kapt(Libraries.hiltCompiler)
+    kapt(Libraries.roomCompiler)
 
     // Application dependencies
     implementation(Libraries.kotlinStdLib)
     implementation(Libraries.kotlinCoroutines)
     implementation(Libraries.kotlinCoroutinesAndroid)
     implementation(Libraries.ktxCore)
+    implementation(Libraries.rxKotlin)
     implementation(Libraries.hilt)
+    implementation(Libraries.kakaoIConnectLive)
+    implementation(Libraries.roomRxjava3)
+    implementation(Libraries.startup)
+    implementation(Libraries.timber)
 
     // Unit/Android tests dependencies
     testImplementation(TestLibraries.junit4)
+    testImplementation(TestLibraries.mockk)
 
     // Acceptance tests dependencies
     androidTestImplementation(TestLibraries.testExtJunit)
